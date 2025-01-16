@@ -1,0 +1,75 @@
+body {
+    background-color: #4c9ebe; /* fond de la page bleuté */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.logo{
+    width: 250px;
+    padding: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.joueur{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: #F5F5DC;
+    font-weight: bold;
+    font-size: large;
+}
+
+.avatar{
+    width: 70px;
+    padding: 25px;
+}
+.message{
+    color: #F5F5DC;
+    font-weight: bold;
+    font-size: large;
+    padding: 2em;
+}
+.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+}
+
+.cellule {
+    background-color: #F5F5DC; /* fond des cellules blanc beige */
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 2px 2px 2px;
+    color: #ff4100;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cellule:hover {
+    background-color: #50c958; /* couleur orange au survol */
+}
+
+.cellule {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
